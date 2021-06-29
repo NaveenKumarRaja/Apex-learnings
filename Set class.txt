@@ -1,0 +1,31 @@
+//Set class 
+class Person {
+    Integer aadharId;
+    String name;
+    
+   public Person(Integer a, String b){
+        this.aadharId = a;
+        this.name = b;
+    }
+    public Boolean equals(Object obj) {
+        if(obj instanceof Person){
+            Person p =(Person)obj;
+            return (aadharId ==p.aadharId);
+        }
+        return false;
+    }
+    public Integer hashCode(){
+        return aadharId;
+    }
+}
+Person ref1 = new Person(21, 'naveen');
+Person ref2 = new Person(21, 'naveen');
+Person ref3 = new Person(23, 'naveen');
+Person ref4 = new Person(216, 'naveen');
+
+
+
+Set<Person> persons = new Set<Person>{ref1, ref2,ref3,ref4};
+    
+System.debug(persons);
+

@@ -1,0 +1,36 @@
+Integer year = 2000;
+// do while loop for leap year...
+do{
+    if(Math.mod(year, 4) == 0){
+    System.debug('leap year ='+year);
+} else {
+        System.debug('not leap year ='+year);
+
+}
+    year++;
+}while(year<=2100);
+
+//another one of do while loop...
+Integer a = 0;
+// do while loop for leap year...
+do{
+    if(Math.mod(a, 3)== 0 && Math.mod(a, 5) == 0) {
+                System.debug('FizzBuzz');
+    }
+    
+    
+    else if(Math.mod(a, 5) == 0) {
+                System.debug('buzz'); 
+    }
+    else if(Math.mod(a, 3) == 0 ) {
+        System.debug('Fizz');
+    }
+    else{
+                System.debug(a);
+
+    }
+    a++;
+}while(a<100);
+
+
+
