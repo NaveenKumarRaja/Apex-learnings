@@ -1,0 +1,19 @@
+public class AddAccount {
+    public static List<Account> insertAccount(List<Account> addAccount){
+        insert addAccount;
+        return addAccount;
+    }
+    
+    public static List<Account> getAllAccounts(){
+       List<Account> accounts = [SELECT Name, Phone FROM Account];
+        return accounts;
+    }
+    public static void printAccounts(){
+       List<Account> accounts = getAllAccounts();
+        for(Account acc: accounts){
+            System.debug('Account Name :'+acc.Name +'PhoneNumber :'+acc.Phone);
+            
+        }
+    }
+
+}
